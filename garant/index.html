@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <!--<link rel="stylesheet" href="/css/reset.css"-->
+    <link rel="stylesheet" href="/css/odometer-theme-default.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <title>Kraken</title>
+</head>
+
+<body>
+    <!-- Небольшой модальное окно -->
+
+    <div id="modal_location" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                            </button>
+                    <h4 class="modal-title">Выберите ваш город из списка</h4>
+                </div>
+                <div class="modal-body">
+                    <a class="geo_location" href="">Тольятти</a>
+                    <a class="geo_location" href="">Самара</a>
+                    <a class="geo_location" href="">Казань</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">В списке нет моего города (использовать данные головного офиса)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal_price" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                </button>
+                    <h4 class="modal-title">Получить прайс</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя">
+                        <input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+                        <input type="email" name="email" id="email" placeholder="Ваш e-mail">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal_calc" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                    </button>
+                    <h4 class="modal-title">Заказать расчет</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <input type="text" name="name" id="name" placeholder="Ваше имя">
+                        <input type="text" name="phone" id="phone" placeholder="Ваш телефон">
+                        <input type="email" name="email" id="email" placeholder="Ваш e-mail">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-offcanvas row-offcanvas-left">
+        <div id="sidebar" class="sidebar-offcanvas">
+            <div class="col-md-12">
+
+                <a class="navbar-brand" href="#"><img src="/img/logo_top.png" alt="Kraken"></a>
+
+                <div class="geo_block">
+                    <a type="button" class="geo_location" href="" data-toggle="modal" data-target="#modal_location"><i class="fa fa-map-marker"></i>Тольятти</a>
+                </div>
+                <ul class="nav nav-pills nav-stacked">
+                    <li></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Керамический гранит</a></li>
+                    <li><a href="#">Композитная панель</a></li>
+                    <li><a href="#">Металлические кассеты</a></li>
+                    <li><a href="#">Фиброцементная плита</a></li>
+                    <li><a href="#">Натуральный гранит</a></li>
+                    <li><a href="#">Алюминиевая панель</a></li>
+
+                </ul>
+                <div class="phone">
+                    <a href="tel:+7 (8482) 249-248" class="message_phone"><i class="fa fa-phone" aria-hidden="true"></i>+7 (8482) 249-248</a>
+                    <br>
+                    <a href="tel:+7 (8482) 249-248" class="message_email"><i class="fa fa-envelope" aria-hidden="true"></i>q.parus@yandex.ru</a>
+
+                </div>
+                <div class="social">
+                    <a target="_blank" href="#" title="">
+                        <i class="fa fa-vk"></i>
+                    </a>
+                    <a target="_blank" href="#" title="">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a target="_blank" href="#" title="">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div id="main">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p class="visible-xs visible-sm burger">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn" data-toggle="offcanvas">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <!--button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button-->
+                </p>
+                <header>
+                    <div class="main_content__top-banner" style="background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(/img/header-bg.jpg); background-position: center center;background-size: cover;background-repeat: no-repeat;">
+                        <div class="main_content_top-banner__black">
+                            
+                            <div class="main_content__title">
+                                <h1>Индивидуальное архитектурное решение</h1>
+                                <span class="main_content__top-banner_desc">Предлагаем индивидуальное архитектурное планирование для каждого заказчика</span>
+                            </div>    
+                            <div class="top-banner_odometr">
+                                <div class="top-banner__odometr-items">
+                                    <div class="col-md-3 col-xs-6 col-sm-3">
+                                        <div class="top-banner__odometr-item">
+                                            <h2 class="odometr-item__value odometer odometer_number_one">1</h2>
+                                            <span class="odometr-item__description">Лет работы</span>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6 col-sm-3">
+                                        <div class="top-banner__odometr-item">
+                                            <h2 class="odometr-item__value odometer odometer_number_two">10</h2>
+                                            <span class="odometr-item__description">Объектов <span class="odometr_item_description-small">завершенных</span> </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6 col-sm-3">
+                                        <div class="top-banner__odometr-item">
+                                            <h2 class="odometr-item__value odometer odometer_number_three">17</h2>
+                                            <span class="odometr-item__description">Клиентов <span class="odometr_item_description-small">постоянных</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-xs-6 col-sm-3">
+                                        <div class="top-banner__odometr-item">
+                                            <h2 class="odometr-item__value odometer odometer_number_four">177</h2>
+                                            <span class="odometr-item__description">М<sup>2</sup> фасада</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section_sheme we_work">
+                                    <div class="block__title">
+                                        <h2>Для кого наше предложение</h2>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="shema"> <img src="../img/we_work/2.jpg" class="attachment-thumbnail size-thumbnail" alt="">
+                                            <h3>Высотные здания</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="shema"> <img src="../img/we_work/6.jpg" class="attachment-thumbnail size-thumbnail" alt="">
+                                            <h3>Бизнес-центры, офисные здания</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="shema"> <img src="../img/we_work/5.jpg" class="attachment-thumbnail size-thumbnail" alt="">
+                                            <h3>Жилые и общественные здания</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="shema"> <img src="../img/we_work/1.jpg" class="attachment-thumbnail size-thumbnail" alt="">
+                                            <h3>Торгово-развлекательные центры</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="shema"> <img src="../img/we_work/3.jpg" class="attachment-thumbnail size-thumbnail" alt="">
+                                            <h3>Промышленные здания и сооружения</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="shema"> <img src="../img/we_work/4.jpg" class="attachment-thumbnail size-thumbnail" alt="">
+                                            <h3>Административные здания</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="post_btn">
+                                            <div class="hover_effect_btn" id="hover_effect_btn"> <a type="button" data-toggle="modal" data-target="#modal_price">Получить
+                                                    прайс</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div class="section_solution">
+                                    <div class="block__title">
+                                        <h2>Готовые решения</h2>
+                                    </div>
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#panel1">Керамический гранит</a>
+                                        </li>
+                                        <li><a data-toggle="tab" href="#panel2">Композитная панель</a></li>
+                                        <li><a data-toggle="tab" href="#panel3">Металлические кассеты</a></li>
+                                        <li><a data-toggle="tab" href="#panel4">Фиброцементная плита</a></li>
+                                        <li><a data-toggle="tab" href="#panel5">Натуральный гранит</a></li>
+                                        <li><a data-toggle="tab" href="#panel6">Алюминиевая панель</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="panel1" class="tab-pane fade in active">
+                                            <div class="section_solution__items">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/1.jpg" alt="">
+                                                            <span class="desc">Материал</span>
+                                                            <span class="price">500 руб./м<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/2.jpg" alt="">
+                                                            <span class="desc">Каркас</span>
+                                                            <span class="price">500 руб./м<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/3.jpg" alt="">
+                                                            <span class="desc">Утеплитель</span>
+                                                            <span class="price">340 руб./м<sup>2</sup>	
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/4.jpg" alt="">
+                                                            <span class="desc">Монтажные услуги
+                                                            </span>
+                                                            <span class="price">1300 руб./м<sup>2</sup>	
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-12 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/5.jpg" alt="">
+                                                            <span class="desc">Проект</span>
+                                                            <span class="price">90 руб.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row section_solution__detail">
+                                                <a href="#">Подробное описание решения</a>
+                                            </div>
+                                            <div class="row section_solution__in_total">
+                                                <h2>Итого:</h2> <span class="price-red">2 730 руб./м<sup>2</sup></span> <a class="btn_order-red" type="button" data-toggle="modal" data-target="#modal_calc">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <div id="panel2" class="tab-pane fade">
+                                            <div class="section_solution__items">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/6.jpg" alt="">
+                                                            <span class="desc">Материал</span>
+                                                            <span class="price">1100 руб./м<sup>2</sup>	
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/7.jpg" alt="">
+                                                            <span class="desc">Каркас</span>
+                                                            <span class="price">500 руб./м<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/3.jpg" alt="">
+                                                            <span class="desc">Утеплитель</span>
+                                                            <span class="price">340 руб./м<sup>2</sup>	
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/4.jpg" alt="">
+                                                            <span class="desc">Монтажные услуги
+                                                            </span>
+                                                            <span class="price">1400 руб./м<sup>2</sup>	
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-12 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/5.jpg" alt="">
+                                                            <span class="desc">Проект</span>
+                                                            <span class="price">90 руб.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row section_solution__detail">
+                                                <a href="#">Подробное описание решения</a>
+                                            </div>
+                                            <div class="row section_solution__in_total">
+                                                <h2>Итого:</h2> <span class="price-red">3 430 руб./м<sup>2</sup></span> <a class="btn_order-red" type="button" data-toggle="modal" data-target="#modal_calc">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <div id="panel3" class="tab-pane fade">
+                                            <div class="section_solution__items">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/8.jpg" alt="">
+                                                            <span class="desc">Материал</span>
+                                                            <span class="price">770 руб./м<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/9.jpg" alt="">
+                                                            <span class="desc">Каркас</span>
+                                                            <span class="price">420 руб./м<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/3.jpg" alt="">
+                                                            <span class="desc">Утеплитель</span>
+                                                            <span class="price">340 руб./м<sup>2</sup>	
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/4.jpg" alt="">
+                                                            <span class="desc">Монтажные услуги
+                                                            </span>
+                                                            <span class="price">1300 руб./м<sup>2</sup>	
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-12 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/5.jpg" alt="">
+                                                            <span class="desc">Проект</span>
+                                                            <span class="price">90 руб.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row section_solution__detail">
+                                                <a href="#">Подробное описание решения</a>
+                                            </div>
+                                            <div class="row section_solution__in_total">
+                                                <h2>Итого:</h2> <span class="price-red">2 920 руб./м<sup>2</sup></span> <a class="btn_order-red" type="button" data-toggle="modal" data-target="#modal_calc">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <div id="panel4" class="tab-pane fade">
+                                            <div class="section_solution__items">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/10.jpg" alt="">
+                                                            <span class="desc">Материал</span>
+                                                            <span class="price">800 руб./м<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/11.jpg" alt="">
+                                                            <span class="desc">Каркас</span>
+                                                            <span class="price">500 руб./м<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/3.jpg" alt="">
+                                                            <span class="desc">Утеплитель</span>
+                                                            <span class="price">340 руб./м<sup>2</sup>	
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/4.jpg" alt="">
+                                                            <span class="desc">Монтажные услуги
+                                                            </span>
+                                                            <span class="price">1300 руб./м<sup>2</sup>	
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-12 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/5.jpg" alt="">
+                                                            <span class="desc">Проект</span>
+                                                            <span class="price">90 руб.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row section_solution__detail">
+                                                <a href="#">Подробное описание решения</a>
+                                            </div>
+                                            <div class="row section_solution__in_total">
+                                                <h2>Итого:</h2> <span class="price-red">3 030 руб./м<sup>2</sup></span> <a class="btn_order-red" type="button" data-toggle="modal" data-target="#modal_calc">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <div id="panel5" class="tab-pane fade">
+                                            <div class="section_solution__items">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/12.jpg" alt="">
+                                                            <span class="desc">Материал</span>
+                                                            <span class="price">2000 руб./м<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/13.jpg" alt="">
+                                                            <span class="desc">Каркас</span>
+                                                            <span class="price">800 руб./м<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/3.jpg" alt="">
+                                                            <span class="desc">Утеплитель</span>
+                                                            <span class="price">400 руб./м<sup>2</sup>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/4.jpg" alt="">
+                                                            <span class="desc">Монтажные услуги
+                                                            </span>
+                                                            <span class="price">2000 руб./м<sup>2</sup>	
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-12 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/5.jpg" alt="">
+                                                            <span class="desc">Проект</span>
+                                                            <span class="price">120 руб.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row section_solution__detail">
+                                                <a href="#">Подробное описание решения</a>
+                                            </div>
+                                            <div class="row section_solution__in_total">
+                                                <h2>Итого:</h2> <span class="price-red">5 320 руб./м<sup>2</sup></span> <a class="btn_order-red" type="button" data-toggle="modal" data-target="#modal_calc">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <div id="panel6" class="tab-pane fade">
+                                            <div class="section_solution__items">
+                                                <div class="row">
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/14.jpg" alt="">
+                                                            <span class="desc">Материал</span>
+                                                            <span class="price">2400 руб./м<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/15.jpg" alt="">
+                                                            <span class="desc">Каркас</span>
+                                                            <span class="price">700 руб./м<sup>2</sup></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/3.jpg" alt="">
+                                                            <span class="desc">Утеплитель</span>
+                                                            <span class="price">400 руб./м<sup>2</sup>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-6 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/4.jpg" alt="">
+                                                            <span class="desc">Монтажные услуги
+                                                            </span>
+                                                            <span class="price">1600 руб./м<sup>2</sup>	
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2 col-sm-12 col-xs-12">
+                                                        <div class="section_solution__item">
+                                                            <img src="/img/project/5.jpg" alt="">
+                                                            <span class="desc">Проект</span>
+                                                            <span class="price">120 руб.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row section_solution__detail">
+                                                <a href="#">Подробное описание решения</a>
+                                            </div>
+                                            <div class="row section_solution__in_total">
+                                                <h2>Итого:</h2> <span class="price-red">5 220 руб./м<sup>2</sup></span> <a class="btn_order-red" type="button" data-toggle="modal" data-target="#modal_calc">Заказать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section_advantage">
+                                    <div class="block__title">
+                                        <h2>Преимущества</h2>
+                                    </div>
+                                    <div class="swiper-container" id="slider_advantage">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="/img/advantage/1.jpg" alt="1"></div>
+                                            <div class="swiper-slide"><img src="/img/advantage/2.jpg" alt="2"></div>
+                                            <div class="swiper-slide"><img src="/img/advantage/3.jpg" alt="3"></div>
+                                            <div class="swiper-slide"><img src="/img/advantage/4.jpg" alt="4"></div>
+                                            <div class="swiper-slide"><img src="/img/advantage/5.jpg" alt="5"></div>
+                                            <div class="swiper-slide"><img src="/img/advantage/6.jpg" alt="6"></div>
+                                            <div class="swiper-slide"><img src="/img/advantage/7.jpg" alt="7"></div>
+                                            <div class="swiper-slide"><img src="/img/advantage/8.jpg" alt="8"></div>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section_our-project">
+                                    <div class="block__title">
+                                        <h2>Наши проекты</h2>
+                                    </div>
+                                    <div class="swiper-container" id="slider_project">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="col-md-6 col-xs-12">
+                                                    <div class="section_our-project__slide-img">
+                                                        <img src="/img/stock_1.jpg" alt="1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xs-12">
+                                                    <div class="section_our-project__slide-desc">
+                                                        <h2>Описание проекта</h2>
+                                                        <ul>
+                                                            <li><span class="title">Каркас:</span><span class="value">тест</span></li>
+                                                            <li><span class="title">Материал утепления:</span><span class="value">тест</span></li>
+                                                            <li><span class="title">Материал фасада:</span><span class="value">тест</span></li>
+                                                            <li><span class="title">Площаль объекта:</span><span class="value">тест</span></li>
+                                                            <li><span class="title">Срок выполнения работ:</span><span class="value">тест</span></li>
+                                                        </ul>
+                                                        <h2>Стоимость работ:</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="col-md-6 col-xs-12">
+                                                    <div class="section_our-project__slide-img">
+                                                        <img src="/img/stock_1.jpg" alt="1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xs-12">
+                                                    <div class="section_our-project__slide-desc">
+                                                        <h2>Описание проекта</h2>
+                                                        <ul>
+                                                            <li><span class="title">Каркас:</span><span class="value">тест</span></li>
+                                                            <li><span class="title">Материал утепления:</span><span class="value">тест</span></li>
+                                                            <li><span class="title">Материал фасада:</span><span class="value">тест</span></li>
+                                                            <li><span class="title">Площаль объекта:</span><span class="value">тест</span></li>
+                                                            <li><span class="title">Срок выполнения работ:</span><span class="value">тест</span></li>
+                                                        </ul>
+                                                        <h2>Стоимость работ:</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="col-md-6 col-xs-12">
+                                                    <div class="section_our-project__slide-img">
+                                                        <img src="/img/stock_1.jpg" alt="1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-xs-12">
+                                                    <div class="section_our-project__slide-desc">
+                                                        <h2>Описание проекта</h2>
+                                                        <ul>
+                                                            <li><span class="title">Каркас:</span><span class="value">тест</span></li>
+                                                            <li><span class="title">Материал утепления:</span><span class="value">тест</span></li>
+                                                            <li><span class="title">Материал фасада:</span><span class="value">тест</span></li>
+                                                            <li><span class="title">Площаль объекта:</span><span class="value">тест</span></li>
+                                                            <li><span class="title">Срок выполнения работ:</span><span class="value">тест</span></li>
+                                                        </ul>
+                                                        <h2>Стоимость работ:</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section_sheme">
+                                    <div class="block__title">
+                                        <h2>Схема взаимодействия</h2>
+                                    </div>
+                                    <div class="col-lg-offset-1 col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="shema"> <img src="/img/shema/1.png" class="attachment-thumbnail size-thumbnail" alt="">
+                                            <h3>Звонок</h3>
+                                            <span>Закажите обратный звонок или позвоните нам сами</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="shema"> <img src="/img/shema/2.png" class="attachment-thumbnail size-thumbnail" alt="">
+                                            <h3>Выезд на объект</h3>
+                                            <span>Встреча с вами, замер, просчеты</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="shema"> <img src="/img/shema/3.png" class="attachment-thumbnail size-thumbnail" alt="">
+                                            <h3>Заключение договора</h3>
+                                            <span>Согласование проекта и подписание договора</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="shema"> <img src="/img/shema/4.png" class="attachment-thumbnail size-thumbnail" alt="">
+                                            <h3>Проведение работ</h3>
+                                            <span>Изготовление фасада, монтаж</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+                                        <div class="shema"> <img src="/img/shema/5.png" class="attachment-thumbnail size-thumbnail" alt="">
+                                            <h3>Сдача объекта</h3>
+                                            <span>Сдача работ в срок</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="post_btn">
+                                            <div class="hover_effect_btn" id="hover_effect_btn"> <a type="button" data-toggle="modal" data-target="#modal_price">Получить
+                                                    прайс</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section_callback">
+                                    <div class="wrap">
+                                        <div class="block__title">
+                                            <h2>Форма обратного звонка</h2>
+                                        </div>
+                                        <div class="form" id="callback_main">
+                                            <input type="text" placeholder="Имя" required>
+                                            <input type="phone" placeholder="Телефон" required>
+                                            <button type="submit">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section_partners">
+                                    <div class="block__title">
+                                        <h2>Партнёры</h2>
+                                    </div>
+                                    <div class="swiper-container" id="slider_partners">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide"><img src="/img/none.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="/img/none.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="/img/none.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="/img/none.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="/img/none.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="/img/none.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="/img/none.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="/img/none.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="/img/none.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="/img/none.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="/img/none.jpg" alt=""></div>
+                                            <div class="swiper-slide"><img src="/img/none.jpg" alt=""></div>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12">
+                                <div class="section_stock">
+                                    <div class="block__title">
+                                        <h2>Акции</h2>
+                                    </div>
+                                    <div class="section_stock__block-stock">
+                                        <div class="col-md-5 col-xs-12">
+                                            <div class="block_stock__img"><img src="img/stock_2.jpg" alt="картинка">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-xs-12">
+                                            <div class="section_stock__block_stock-description">
+                                                <div class="section_stock__block_stock-description-filter">
+                                                    <h2>Акция</h2>
+                                                    <p>Дизайн макет + смета <br>от нашего проектировщика дизайнера</p>
+                                                    <h2>Бесплатно</h2>
+                                                    <br> <a type="button" data-toggle="modal" data-target="#modal_calc">Заказать расчет</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="block__title">
+                                    <h2>Отзывы</h2>
+                                </div>
+                                <div class="section_comment">
+                                    <div class="swiper-container" id="slider_comment">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="swiper-slide-content">
+                                                    <div class="swiper-slide-content-text">
+                                                        <div class="g-swiper-slide-content-title">Kraken is worth its weight in gold, just fantastic!</div>
+                                                        <div class="g-swiper-slide-content-desc">- Alex Simon, Think Kraken Co.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="swiper-slide-content">
+
+                                                    <div class="swiper-slide-content-text">
+                                                        <div class="g-swiper-slide-content-title">Kraken is worth its weight in gold, just fantastic!</div>
+                                                        <div class="g-swiper-slide-content-desc">- Alex Simon, Think Kraken Co.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="swiper-slide-content">
+
+                                                    <div class="swiper-slide-content-text">
+                                                        <div class="g-swiper-slide-content-title">Kraken is worth its weight in gold, just fantastic!</div>
+                                                        <div class="g-swiper-slide-content-desc">- Alex Simon, Think Kraken Co.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="section_map">
+                                    <div class="block__title">
+                                        <h2>Где мы находимся</h2>
+                                    </div>
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af19bae45a822a6a8e0427f417d1fc4e2dd8e161316037ce5460487bc6aae4d77&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="section_footer">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="section_footer__logo">
+                                                <img src="/img/logo_footer.png" alt="Logo">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="section_footer__nav">
+                                                <ul>
+                                                    <li><a href="#">О нас</a></li>
+                                                    <li><a href="#">Портфолио</a></li>
+                                                    <li><a href="#">Контакты</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div-- class="col-md-3 col-sm-3 col-xs-12">
+                                            <div class="contact footer">
+                                                <span><i class="fa fa-map-marker"></i> 445028, Самарская обл.,<br> г. Тольятти, Приморский бульвар, 45</span>
+                                            </div>
+                                            <!--div class="social footer">
+                                                <a target="_blank" href="#" title="">
+                                                    <i class="fa fa-vk"></i>
+                                                </a>
+                                                <a target="_blank" href="#" title="">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                                <a target="_blank" href="#" title="">
+                                                    <i class="fa fa-instagram"></i>
+                                                </a>
+                                            </div-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section_footer__copyright">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+                                <div class="col-md-6"><span>Copyright © 2019 Garant</span></div>
+                                <div class="col-md-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="scroller"><i class="fa fa-arrow-circle-o-up fa-2x"></i></div>
+    <script src="https://use.fontawesome.com/eca27ab407.js"></script>
+    <script src="/js/jquery 3.3.1.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<9ce31d23-4c90-418d-bd78-d3d6639b58f7>" type="text/javascript"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="/js/odometer.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

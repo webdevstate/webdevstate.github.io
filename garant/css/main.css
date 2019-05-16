@@ -1,0 +1,924 @@
+@font-face {
+    font-family: 'San Francisco Text Light';
+    src: url('/fonts/SFUIText-Light.eot');
+    src: url('/fonts/SFUIText-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/SFUIText-Light.woff') format('woff'), url('/fonts/SFUIText-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Text Regular';
+    src: url('/fonts/SFUIText-Regular.eot');
+    src: url('/fonts/SFUIText-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/SFUIText-Regular.woff') format('woff'), url('/fonts/SFUIText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Text Medium';
+    src: url('/fonts/SFUIText-Medium.eot');
+    src: url('/fonts/SFUIText-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/SFUIText-Medium.woff') format('woff'), url('/fonts/SFUIText-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Text Semibold';
+    src: url('/fonts/SFUIText-Semibold.eot');
+    src: url('/fonts/SFUIText-Semibold.eot?#iefix') format('embedded-opentype'), url('/fonts/SFUIText-Semibold.woff') format('woff'), url('/fonts/SFUIText-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Text Bold';
+    src: url('/fonts/SFUIText-Bold.eot');
+    src: url('/fonts/SFUIText-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/SFUIText-Bold.woff') format('woff'), url('/fonts/SFUIText-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Text Semibold Italic';
+    src: url('/fonts/SFUIText-SemiboldItalic.eot');
+    src: url('/fonts/SFUIText-SemiboldItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/SFUIText-SemiboldItalic.woff') format('woff'), url('/fonts/SFUIText-SemiboldItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html,
+.row-offcanvas {
+    min-height: 100%;
+    height: 100%;
+    font-family: 'San Francisco Text Regular';
+    font-weight: 400;
+    -webkit-text-size-adjust: none;
+    font-size-adjust: none;
+    scroll-behavior: smooth;
+    letter-spacing: 1px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container,
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.col-md-12 {
+    padding: 0;
+    margin: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-size: 35px 100px;
+    width: 35px;
+    height: 100px;
+    margin-top: -60px;
+}
+
+.swiper-button-next {
+    background-image: url('../img/right-arrow.png');
+}
+
+.swiper-button-prev {
+    background-image: url('../img/left-arrow.png');
+}
+
+#sidebar {
+    width: inherit;
+    min-width: 200px;
+    max-width: 200px;
+    background-color: #151a23;
+    color: #fff;
+    float: left;
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+#main {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#sidebar .navbar-brand {
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#sidebar .navbar-brand>img {
+    display: block;
+    max-width: 120px;
+}
+
+#sidebar .geo_block {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#sidebar .geo_location {
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: none;
+}
+
+#sidebar .geo_location:focus {
+    background: transparent;
+}
+
+#sidebar .geo_location i {
+    color: #cd0101;
+    margin-right: 5px;
+    font-size: 2rem;
+}
+
+#sidebar .icon-bar {
+    margin: 4px !important;
+}
+
+#sidebar ul li {
+    margin: 0.5rem 0 !important;
+    text-align: center;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    padding: 0.5345rem 0rem !important;
+    line-height: normal;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+#sidebar ul li a:hover {
+    color: #3ca5a8;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    background-color: transparent;
+}
+
+#sidebar .phone {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#sidebar .phone a {
+    color: #ffffff;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+#sidebar .phone a:hover {
+    color: #3ca5a8;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#sidebar .phone a i {
+    margin-right: 7px;
+}
+
+.social {
+    padding: 0.9345rem 1rem !important;
+    text-align: center;
+}
+
+.social a {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 0.1rem !important;
+    width: 38px;
+    height: 32px;
+    line-height: 30px;
+    background: url(/img/hexborder.png) no-repeat;
+}
+
+.social a i {
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.social a i:hover {
+    color: #3ca5a8;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.social.footer a i {
+    color: #151a23;
+    font-weight: 600;
+}
+
+.social.footer a i:hover {
+    color: #3ca5a8;
+}
+
+.main_content {
+    margin: 0;
+    padding: 0;
+}
+
+.main_content__top-banner {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 150px;
+    text-align: center;
+    height: 100vh;
+    padding: 0;
+}
+
+.main_content_top-banner__black {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.main_content__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.main_content__top-banner h1 {
+    font-family: 'San Francisco Text bold';
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 4em;
+    width: 50%;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.main_content__top-banner .main_content__top-banner_desc {
+    color: #fff;
+    font-size: 2.3em;
+    padding-bottom: 20px;
+    width: 28%;
+}
+
+.top-banner_odometr {
+    margin-bottom: 150px;
+    margin-top: 50px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.top-banner__odometr-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.top-banner__odometr-item i {
+    padding-bottom: 0.6rem !important;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 0.5rem !important;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.odometr-item__value.odometer.odometer-auto-theme {
+    font-size: 5rem !important;
+    font-family: 'San Francisco Text bold';
+}
+
+.odometr-item__description {
+    font-family: 'San Francisco Text semibold';
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.odometr_item_description-small {
+    display: block;
+    font-size: 2rem;
+}
+
+
+/***************************       Готовые решения             **************************************************/
+
+.section_solution {
+    padding-top: 10px;
+    background-color: #4e4e4e;
+    color: #fff;
+}
+
+.section_solution .block__title h2 {
+    border-top: 5px solid rgba(255, 255, 255, 1);
+}
+
+.section_solution .nav-tabs {
+    border-bottom: none;
+    background: #4e4e4e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section_solution .nav-tabs li {
+    margin-bottom: 0;
+}
+
+.section_solution .nav-tabs li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    border: none;
+    border-radius: 0;
+    padding: 10px 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.section_solution .nav-tabs>li.active>a {
+    background-color: transparent;
+}
+
+.section_solution .nav-tabs>li>a:focus {
+    background-color: transparent;
+}
+
+.section_solution .nav-tabs>li.active>a:focus {
+    border: none;
+}
+
+.section_solution .nav-tabs>li>a:hover {
+    color: #3ca5a8;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.section_solution .nav-tabs>li.active>a:hover {
+    border: none;
+}
+
+.section_solution .tab-content {
+    padding: 20px;
+}
+
+.section_solution .tab-content>.active {
+    text-align: center;
+}
+
+.section_solution .tab-content .section_solution__items .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.section_solution .tab-content .section_solution__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.section_solution .tab-content .section_solution__item img {
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+.section_solution .tab-content .section_solution__item .desc {
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section_solution .tab-content .section_solution__detail {
+    padding-top: 20px;
+}
+
+.section_solution .tab-content .section_solution__detail a {
+    border-bottom: 1px dashed #fff;
+    transition: all 0.2s;
+    color: #fff;
+}
+
+.section_solution .tab-content .section_solution__detail a:hover {
+    color: #3ca5a8;
+    border-bottom: none;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.section_solution .tab-content .section_solution__in_total {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.section_solution .tab-content .section_solution__in_total .price-red {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0 20px 0 10px;
+}
+
+.section_solution .tab-content .section_solution__in_total h2 {
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.btn_order-red {
+    cursor: pointer;
+    font-size: 2rem;
+    background: red;
+    color: #fff;
+    border: none;
+    width: 190px;
+    text-transform: uppercase;
+    font-weight: 600;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.btn_order-red:hover {
+    background: #fff;
+    border: 2px solid red;
+    color: red;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+
+/****************************     Преимущества   *************************************************/
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    /*display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;*/
+    padding: 30px 50px;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #3ca5a8;
+}
+
+
+/**************************      Наши проекты      ********************************************/
+
+.section_our-project .section_our-project__slide-desc {
+    text-align: left;
+}
+
+.section_our-project .section_our-project__slide-desc ul {
+    padding-left: 0;
+}
+
+.section_our-project .section_our-project__slide-desc ul li {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_our-project .section_our-project__slide-desc ul li {
+    border-bottom: 1px dotted;
+    margin-bottom: 10px;
+}
+
+.section_our-project .section_our-project__slide-desc ul li span {
+    margin-bottom: -.31em;
+    background: #fff;
+}
+
+.section_our-project .section_our-project__slide-desc ul li .title {
+    font-weight: 600;
+}
+
+
+/****************************** Схема взаимодействия  *********************************************/
+
+.section_sheme .shema {
+    transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -webkit-transition: all 1s ease 0s;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    height: 190px;
+}
+
+.section_sheme .shema img {
+    max-width: 150px;
+    width: 70%;
+}
+
+.section_sheme .shema>h3 {
+    color: #151a23;
+    line-height: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section_sheme .post_btn {
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.section_sheme .post_btn a {
+    position: relative;
+    outline: none;
+    background: #3ca5a8;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 1.35em;
+    color: #ffffff;
+    padding: 15px 25px;
+    transition: background 0.2s ease-out;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.section_sheme .post_btn a:hover {
+    background: #fff;
+    color: #3ca5a8;
+    border: 2px solid #3ca5a8;
+    padding: 13px 23px;
+    box-shadow: none;
+    transition: background 0.2s ease-out;
+}
+
+
+/***************************       Обратная свзяь    **********************************************/
+
+.section_callback {
+    background: #3ca5a8;
+    padding-bottom: 60px;
+    padding-top: 10px;
+}
+
+.section_callback .block__title h2 {
+    color: #fff;
+    border-top: 5px solid #fff;
+}
+
+.section_callback #callback_main {
+    margin: 40px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.section_callback #callback_main input {
+    margin-right: 30px;
+    border: none;
+    padding: 10px 40px 10px 10px;
+}
+
+.section_callback #callback_main input:focus {
+    border: 2px solid #151a23;
+    padding: 8px 38px 8px 8px;
+}
+
+.section_callback #callback_main button {
+    background: #3ca5a8;
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px 30px;
+    transition: background 0.2s ease-in-out;
+}
+
+.section_callback #callback_main button:hover {
+    background: #fff;
+    color: #3ca5a8;
+    transition: background 0.2s ease-in-out;
+}
+
+
+/***************************       Акции        *************************************************/
+
+.section_stock__block-stock {
+    display: flex;
+    flex-direction: row;
+    margin: 0.625rem 0;
+    padding: 0.938rem 0;
+}
+
+.section_stock__block-stock .col-md-5,
+.section_stock__block-stock .col-md-7 {
+    margin: 0;
+    padding: 0;
+}
+
+.block__title h2 {
+    font-family: 'San Francisco Text bold';
+    text-align: center;
+    font-size: 3.25rem;
+    letter-spacing: 0.5rem;
+    line-height: 2.25;
+    border-top: 5px solid rgba(39, 44, 53, 0.15);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.block__title h2:before,
+.block__title h2:after {
+    position: absolute;
+    content: "";
+    background: url(/img/title-promo-bg.png) no-repeat;
+    display: block;
+    width: 58px;
+    height: 8px;
+    top: 50%;
+    margin-top: -4px;
+}
+
+.block__title h2:before {
+    left: 0;
+}
+
+.block__title h2:after {
+    right: 0;
+}
+
+.section_stock__block_stock-description {
+    background: url(/img/stock_1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+}
+
+.section_stock__block_stock-description-filter {
+    padding: 8% 0 8% 10%;
+    -webkit-background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .7);
+    height: 100%;
+}
+
+.section_stock__block_stock-description h2 {
+    padding: 5% 0;
+}
+
+.section_stock__block_stock-description a {
+    color: #fff;
+    padding: 2% 11%;
+    font-size: 1.8rem;
+    border: 2px solid #fff;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.section_stock__block_stock-description a:hover {
+    background: none;
+    border: 2px solid #3ca5a8;
+    text-decoration: none;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+
+/****************************    Отзывы     **************************************/
+
+.section_comment {
+    position: relative;
+    border: 1px solid rgba(39, 44, 53, 0.15);
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;
+}
+
+.section_comment #slider_comment {
+    height: 300px;
+}
+
+.section_comment .swiper-slide-content {
+    position: relative;
+    padding-top: 7rem;
+}
+
+.section_comment .swiper-container .swiper-slide-content {
+    overflow: hidden;
+    margin: 0 1px;
+}
+
+.section_comment .swiper-slide-content:before {
+    position: absolute;
+    content: "";
+    background: url(/img/comment_top-bg.png) no-repeat;
+    display: block;
+    width: 60px;
+    height: 36px;
+    top: 0;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.section_comment .g-swiper-slide-content-title {
+    color: #272c35;
+}
+
+.section_comment .g-swiper-slide-content-title {
+    font-family: 'San Francisco Text Semibold Italic';
+    font-style: italic;
+    font-weight: 200;
+    margin: 1rem auto;
+    width: 50%;
+}
+
+.section_comment .swiper-container .g-swiper-slide-content-title {
+    font-weight: 500;
+    font-size: 2.55rem;
+    line-height: 1.25;
+}
+
+.section_comment .g-swiper-slide-content-title:before,
+.section_comment .g-swiper-slide-content-title:after {
+    content: '"';
+    margin: 0 0.25rem;
+}
+
+.section_comment .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: #fff;
+    border: 2px solid #151a23;
+}
+
+.section_comment .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #151a23;
+}
+
+
+/****************************     FOOTER   *************************************/
+
+.section_footer {
+    color: #272c35;
+    border-top: 5px solid rgba(39, 44, 53, 0.15);
+    border-bottom: 1px solid rgba(39, 44, 53, 0.15);
+}
+
+.section_footer__logo {
+    text-align: left;
+}
+
+.section_footer__nav {
+    border-left: 1px solid rgba(39, 44, 53, 0.15);
+    border-right: 1px solid rgba(39, 44, 53, 0.15);
+    padding: 3rem 0;
+}
+
+.section_footer__nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.section_footer__nav ul li {
+    list-style-type: none;
+}
+
+.section_footer__nav ul li a {
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section_footer .social {
+    text-align: right;
+    padding: 2rem !important;
+}
+
+.contact.footer {
+    padding-top: 1.5rem;
+}
+
+.section_footer__copyright {
+    padding: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#scroller {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 3;
+}

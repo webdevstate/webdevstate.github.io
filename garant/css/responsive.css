@@ -1,0 +1,346 @@
+@media screen and (max-width: 768px) {}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width:768px) {
+    .block__title h2 {
+        font-size: 1.55rem;
+        line-height: 3;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-weight: 500;
+        letter-spacing: 0rem;
+    }
+    #sidebarCollapse {
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 1px solid #fff;
+        padding: 0 2px;
+    }
+    .active #sidebarCollapse {
+        border: none;
+    }
+    #main .burger {
+        position: absolute;
+        left: 45%;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+    }
+    .active #main .burger {
+        position: absolute;
+        left: -1px;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+        background: #151a23;
+    }
+    .active #main .burger span {
+        background: #fff;
+    }
+    .active #main .burger span:nth-child(2) {
+        opacity: 0;
+    }
+    .active #main .burger span:first-child {
+        -ms-transform: rotate(45deg) translate(7px, 6px);
+        -webkit-transform: rotate(45deg) translate(6px, 6px);
+        -o-transform: rotate(45deg) translate(7px, 6px);
+        -moz-transform: rotate(45deg) translate(7px, 6px);
+        transform: rotate(45deg) translate(7px, 6px);
+    }
+    .active #main .burger span:last-child {
+        transform: rotate(-45deg) translate(6px, -5px);
+        -webkit-transform: rotate(-45deg) translate(6px, -5px);
+        -moz-transform: rotate(-45deg) translate(6px, -5px);
+        -ms-transform: rotate(-45deg) translate(6px, -5px);
+        -o-transform: rotate(-45deg) translate(6px, -5px);
+    }
+    #sidebarCollapse span {
+        width: 90%;
+        height: 2px;
+        margin: 7px auto;
+        display: block;
+        background: #fff;
+        transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+    }
+    .row-offcanvas {
+        position: relative;
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+        width: calc(100% + 200px);
+    }
+    .row-offcanvas-left {
+        left: -200px;
+    }
+    .row-offcanvas-left.active {
+        left: 0;
+    }
+    .sidebar-offcanvas {
+        position: absolute;
+        top: 0;
+    }
+    .col-xs-12 {
+        padding: 0;
+    }
+    .container {
+        padding: 0 15px;
+    }
+    .row {
+        margin: 0;
+    }
+    .block__title h2:before,
+    .block__title h2:after {
+        background: none;
+    }
+    .main_navbar {
+        margin-bottom: 0;
+        height: 45vw;
+    }
+    .main_content__top-banner {
+        padding: 150px 0;
+    }
+    .main_content__title {
+        margin-bottom: 50px;
+    }
+    .main_content__top-banner h1 {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+        line-height: 1.3;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        width: 100%;
+    }
+    .top-banner_odometr {
+        width: 100%;
+    }
+    .main_content__top-banner .odometr-item__value.odometer.odometer-auto-theme {
+        font-size: 3rem !important;
+    }
+    .main_content__top-banner .odometr-item__description {
+        font-size: calc( (100vw - 40rem)/(40 - 32) * (3.5 - 2.5) + 2.5rem);
+        font-weight: 600;
+    }
+    .odometr_item_description-small {
+        font-size: 1rem;
+    }
+    .main_content__top-banner .main_content__top-banner_desc {
+        color: #fff;
+        font-size: 1em;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    .section_solution .tab-content {
+        padding: 20px;
+    }
+    .section_solution .nav-tabs {
+        border-bottom: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section_solution .nav-tabs li a {
+        padding: 5px;
+        font-size: 0.85em;
+    }
+    .section_solution .tab-content .section_solution__items .row {
+        display: block;
+    }
+    .section_solution .tab-content .section_solution__item {
+        margin-bottom: 10px;
+    }
+    .section_solution .tab-content .section_solution__item img {
+        max-width: 50%;
+    }
+    .section_solution .tab-content .section_solution__in_total {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .btn_order-red {
+        width: 100%;
+        padding: 5px 0;
+    }
+    .section_advantage .swiper-button-next,
+    .swiper-button-prev {
+        height: 30px;
+    }
+    .section_sheme .shema {
+        margin: 0;
+        height: auto;
+    }
+    .section_sheme .post_btn {
+        margin: 30px 0;
+    }
+    .section_callback {
+        padding-bottom: 0;
+    }
+    .section_callback #callback_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0;
+    }
+    .section_callback #callback_main input {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .section_callback #callback_main button {
+        width: 50%;
+    }
+    .section_our-project .section_our-project__slide-desc {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .section_stock__block-stock {
+        display: flex;
+        flex-direction: column;
+    }
+    .section_comment #slider_comment {
+        height: 400px;
+    }
+    .section_footer .container {
+        padding: 0;
+    }
+    .section_footer__logo {
+        text-align: center;
+    }
+    .section_footer .social {
+        text-align: center;
+        padding: 2rem !important;
+    }
+    .swiper-slide {
+        padding: 0;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+    .contact.footer {
+        padding: 1rem 0;
+        text-align: center;
+    }
+}
+
+@media(max-width: 320px) {
+    .main_content__top-banner {
+        padding: 70px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1300px;
+        width: 75%;
+    }
+    .block__title h2 {
+        font-size: 1.35rem;
+    }
+    .odometr-item__value.odometer.odometer-auto-theme {
+        font-size: 2rem !important;
+    }
+    .section_stock__block_stock-description-filter {
+        padding: 1% 0 1% 10%;
+    }
+}
+
+@media (min-width: 992px) {
+    .block__title h2 {
+        font-size: 2.25rem;
+    }
+    .odometr-item__value.odometer.odometer-auto-theme {
+        font-size: 2rem !important;
+    }
+    .section_stock__block_stock-description-filter {
+        padding: 1% 0 8% 10%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main_content__top-banner {
+        padding-top: 90px;
+    }
+    .block__title h2 {
+        font-size: 3.5rem;
+        line-height: 2.25;
+    }
+    .section_footer .social {
+        text-align: right;
+        padding: 1rem !important;
+    }
+    .odometr-item__value.odometer.odometer-auto-theme {
+        font-size: 3rem !important;
+    }
+    .section_stock__block_stock-description-filter {
+        padding: 1% 0 8% 10%;
+    }
+    .section_solution .nav-tabs li a {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .odometr-item__value.odometer.odometer-auto-theme {
+        font-size: 5rem !important;
+    }
+}
+
+@media (min-width: 1400px) {
+    .col-lg-2,
+    .col-md-2 {
+        padding: 0;
+    }
+    .section_solution .nav-tabs li a {
+        font-size: 1rem;
+    }
+    .section_our-project__slide-desc h2 {
+        margin: 0;
+        padding: 0;
+    }
+    .section_our-project .section_our-project__slide-desc ul li {
+        padding: 7px 0;
+    }
+    .swiper-slide {
+        padding: 40px;
+    }
+    .section_stock__block_stock-description h2 {
+        font-size: 5rem;
+    }
+    .section_stock__block_stock-description-filter {
+        padding: 1% 0 0% 10%;
+    }
+    .section_stock__block_stock-description-filter p {
+        font-size: 2rem;
+    }
+    .main_content__top-banner {
+        padding-top: 90px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .container {
+        width: 80%;
+    }
+    .main_content__top-banner {
+        padding-top: 280px;
+    }
+    .section_our-project__slide-desc h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .section_solution .nav-tabs li a {
+        font-size: 1.25rem;
+    }
+    .section_our-project .section_our-project__slide-desc ul li {
+        padding: 10px 0;
+    }
+}
