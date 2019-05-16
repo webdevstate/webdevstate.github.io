@@ -1,47 +1,47 @@
 @font-face {
     font-family: 'San Francisco Text Light';
-    src: url('/fonts/SFUIText-Light.eot');
-    src: url('/fonts/SFUIText-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/SFUIText-Light.woff') format('woff'), url('/fonts/SFUIText-Light.ttf') format('truetype');
+    src: url('fonts/SFUIText-Light.eot');
+    src: url('fonts/SFUIText-Light.eot?#iefix') format('embedded-opentype'), url('fonts/SFUIText-Light.woff') format('woff'), url('fonts/SFUIText-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'San Francisco Text Regular';
-    src: url('/fonts/SFUIText-Regular.eot');
-    src: url('/fonts/SFUIText-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/SFUIText-Regular.woff') format('woff'), url('/fonts/SFUIText-Regular.ttf') format('truetype');
+    src: url('fonts/SFUIText-Regular.eot');
+    src: url('fonts/SFUIText-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/SFUIText-Regular.woff') format('woff'), url('fonts/SFUIText-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'San Francisco Text Medium';
-    src: url('/fonts/SFUIText-Medium.eot');
-    src: url('/fonts/SFUIText-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/SFUIText-Medium.woff') format('woff'), url('/fonts/SFUIText-Medium.ttf') format('truetype');
+    src: url('fonts/SFUIText-Medium.eot');
+    src: url('fonts/SFUIText-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/SFUIText-Medium.woff') format('woff'), url('fonts/SFUIText-Medium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'San Francisco Text Semibold';
-    src: url('/fonts/SFUIText-Semibold.eot');
-    src: url('/fonts/SFUIText-Semibold.eot?#iefix') format('embedded-opentype'), url('/fonts/SFUIText-Semibold.woff') format('woff'), url('/fonts/SFUIText-Semibold.ttf') format('truetype');
+    src: url('fonts/SFUIText-Semibold.eot');
+    src: url('fonts/SFUIText-Semibold.eot?#iefix') format('embedded-opentype'), url('fonts/SFUIText-Semibold.woff') format('woff'), url('fonts/SFUIText-Semibold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'San Francisco Text Bold';
-    src: url('/fonts/SFUIText-Bold.eot');
-    src: url('/fonts/SFUIText-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/SFUIText-Bold.woff') format('woff'), url('/fonts/SFUIText-Bold.ttf') format('truetype');
+    src: url('fonts/SFUIText-Bold.eot');
+    src: url('fonts/SFUIText-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/SFUIText-Bold.woff') format('woff'), url('fonts/SFUIText-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'San Francisco Text Semibold Italic';
-    src: url('/fonts/SFUIText-SemiboldItalic.eot');
-    src: url('/fonts/SFUIText-SemiboldItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/SFUIText-SemiboldItalic.woff') format('woff'), url('/fonts/SFUIText-SemiboldItalic.ttf') format('truetype');
+    src: url('fonts/SFUIText-SemiboldItalic.eot');
+    src: url('fonts/SFUIText-SemiboldItalic.eot?#iefix') format('embedded-opentype'), url('fonts/SFUIText-SemiboldItalic.woff') format('woff'), url('fonts/SFUIText-SemiboldItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
