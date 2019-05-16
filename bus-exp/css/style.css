@@ -1,0 +1,344 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+	font-family: "Ubuntu Medium", sans-serif;
+}
+
+header{
+	background-color: #2a6dc5;
+}
+
+
+nav.navbar {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 0.5rem 0;
+	border-radius: 0;
+	font-family: "Ubuntu Medium", sans-serif;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.navbar img {
+	padding-right: 5rem;
+}
+
+.navbar ul li:last-child a {
+	padding-right: 0;
+}
+
+.navbar ul li a {
+	color: #fff;
+	padding-right: 5rem;
+	transition: all 0.1s;
+}
+.navbar ul li a:hover{
+	color: #ff931e;
+	transition: all 0.1s;
+}
+
+.navbar-nav a.nav-link {
+	padding-bottom: 0;
+}
+
+.main-content {
+	background: url(../image/main-bg.jpg) no-repeat center center;
+	padding-top: 145px;
+	padding-bottom: 135px;
+	background-size: cover;
+}
+
+.main-content h1 {
+	padding-bottom: 32px;
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.main-content p {
+	padding-bottom: 70px;
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+button.action-button {
+	background: #ff931e;
+	color: #fff;
+	box-shadow: 0 7px rgba(174, 176, 178, 0.5);
+	padding: 24px 43px;
+	font-size: 1.5rem;
+	transition: all 0.2s;
+	border-radius: 100px;
+}
+
+button.action-button:hover {
+	background: #fff;
+	border: 1px solid #ff931e;
+	color: #ff931e;
+	transition: all 0.2s;
+	box-shadow: none;
+}
+
+.practical-value {
+	padding-top: 95px;
+	padding-bottom: 85px;
+}
+
+.practical-value h2 {
+	padding-bottom: 40px;
+}
+
+.practical-value p {
+	padding-bottom: 45px;
+}
+
+.practical-value a {
+	color: #3fa9f5;
+	border-bottom: 1px solid #3fa9f5;
+		transition: all 0.3s;
+
+}
+
+.practical-value a:hover{
+	text-decoration: none;
+	color: #ff931e;
+	border-bottom: 1px solid #ff931e;
+		transition: all 0.3s;
+
+}
+
+.capabilities {
+	background: url(../image/bg.jpg) no-repeat center center;
+	background-size: cover;
+	padding-bottom: 150px;
+	padding-top: 100px;
+	color: #fff;
+}
+
+.capabilities h2 {
+	padding-bottom: 100px;
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.capabilities .items {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: space-between;
+}
+
+.capabilities .items .item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.capabilities .items .item p {
+	font-size: 0.8rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.capabilities .items .item img {
+	padding-bottom: 35px;
+}
+
+.difference {
+	padding-bottom: 80px;
+	padding-top: 115px;
+}
+
+.difference h2 {
+	padding-bottom: 65px;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.difference p {
+	font-size: 0.95rem;
+	color: #333;
+}
+
+.action {
+	background: #f0f4ff;
+}
+
+.content {
+	background: url(../image/men.png) no-repeat 90%;
+	padding-top: 125px;
+	padding-bottom: 145px;
+}
+
+.content h2 {
+	padding-bottom: 56px;
+}
+
+.achievements {
+	padding-top: 90px;
+	padding-bottom: 210px;
+}
+
+.achievements h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	padding-bottom: 105px;
+}
+
+.achievements .items {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+}
+
+.achievements .items .item {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-right: 73px;
+}
+
+.achievements .items .item:last-child {
+	padding-right: 0;
+}
+
+.achievements .items .item img {
+	padding-bottom: 50px;
+}
+
+.achievements .items .item span {
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #2a6dc5;
+	padding-bottom: 30px;
+}
+
+.achievements .items .item p {
+	font-size: 0.9rem;
+	color: #333;
+}
+
+.customers {
+	background: #f0f4ff;
+	padding-bottom: 85px;
+	padding-top: 100px;
+}
+
+.customers .items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.customers .items .item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.customers .items .item img {
+	padding-bottom: 45px;
+}
+
+.customers .items .item a {
+	color: #333;
+	text-decoration: none;
+	border-bottom: 2px solid #333;
+	font-size: 1rem;
+		transition: all 0.2s;
+
+}
+
+.customers .items .item a:hover {
+	border-bottom: 2px solid #ff931e;
+	color: #ff931e;
+		transition: all 0.2s;
+
+}
+
+.feedback {
+	background: #ef651e;
+	color: #fff;
+	padding-top: 52px;
+	padding-bottom: 80px;
+}
+
+.feedback form {
+	display: grid;
+	grid-template-columns: auto auto;
+	font-size: 2rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.feedback form p {
+	margin-bottom: 0;
+	font-family: "Ubuntu Regular", sans-serif;
+}
+
+.feedback form button.btn-feedback {
+	padding: 35px;
+	font-size: 2rem;
+	font-family: "Ubuntu Medium", sans-serif;
+	color: #666666;
+	background: #fff;
+	border-radius: 0;
+	transition: all 0.3s;
+
+}
+
+.feedback form button.btn-feedback:hover {
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	transition: all 0.3s;
+}
+
+.contacts {
+	background: #231f20;
+	color: #e6e7e8;
+	padding-top: 52px;
+}
+
+.contacts .items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts .items .item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.contacts .items .item h2 {
+	font-size: 1rem;
+}
+
+.contacts .items .item p,
+.contacts .items .item p a {
+	font-size: 0.8rem;
+	color: #fff;
+	transition: all 0.3s;
+	text-decoration: none;
+}
+.contacts .items .item p a:hover{
+	color: #ff931e;
+	transition: all 0.3s;
+	border-bottom: 1px solid #ff931e;
+}
+
+.copyright {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	color: #6e7479;
+	font-size: 0.7rem;
+	padding-top: 135px;
+	padding-bottom: 20px;
+}
+
