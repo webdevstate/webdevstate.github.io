@@ -635,7 +635,7 @@ section {
 }
 
 .sect4 .banner__bg {
-    background: url(/images/bg33.jpg);
+    background: url(../images/bg33.jpg);
     width: 50%;
     background-size: cover;
     background-repeat: repeat;
