@@ -1,2 +1,0 @@
-# garant
-Landing Garant
