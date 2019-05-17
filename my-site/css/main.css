@@ -147,6 +147,10 @@ section+section {
     animation: fade-in 1s ease;
 }
 
+.button__menu {
+    display: none;
+}
+
 
 /*******************Main************************/
 
@@ -156,7 +160,7 @@ section+section {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: url(../images/main_bg.jpg) no-repeat 90px center;
+    background: url(../images/main_bg.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -192,7 +196,7 @@ section+section {
 }
 
 .about__content-photo {
-    background: url(../images/none_photo.jpg) no-repeat center center;
+    background: url(../images/none_photo.jpg) no-repeat center top;
     background-size: contain;
     width: 30%;
     height: auto;

@@ -1,0 +1,100 @@
+@media screen and (max-width: 768px) {
+    .left__bar {
+        background-color: #372db4;
+        height: 100px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    .menu__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .content__wrapper {
+        margin-left: 0;
+    }
+    .main h1 {
+        font-size: 100px;
+    }
+    .main h1 span {
+        font-size: 26px;
+    }
+    .about__content-description {
+        padding-left: 0;
+    }
+    .about__contact {
+        flex-direction: column;
+    }
+    .scroll__top {
+        right: 30px;
+        bottom: 120px;
+        height: 65px;
+        width: 65px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .left__bar {
+        height: 60px;
+    }
+    .quick__menu>ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding-left: 10px;
+    }
+    .quick__menu>ul>li>a {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: #fff;
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .button__menu {
+        display: block;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .button__menu .icon.icon-menu {
+        fill: #fff;
+        width: 30px;
+        height: 30px;
+    }
+    .main h1 {
+        font-size: 80px;
+    }
+    .main h1 span {
+        font-size: 18px;
+    }
+    .scroll__top {
+        display: none;
+    }
+    .about__content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .about__content-photo {
+        width: 100%;
+        height: 200px;
+    }
+    .about__content-description {
+        width: 100%;
+    }
+    .about__contact ul {
+        margin-right: 0;
+    }
+    .btn__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__content-description .btn {
+        margin-bottom: 15px;
+        width: 90%;
+        margin-right: 0;
+    }
+}
