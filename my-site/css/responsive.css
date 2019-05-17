@@ -16,12 +16,6 @@
         background: url(../images/main_bg.jpg) no-repeat center bottom;
         background-size: cover;
         background-attachment: fixed;
-        position: fixed;
-        z-index: -1;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
     }
     .menu__items {
         display: flex;
@@ -36,9 +30,6 @@
     }
     .main h1 span {
         font-size: 26px;
-    }
-    .about {
-        margin-top: 100vh;
     }
     .about__content-description {
         padding-left: 0;
