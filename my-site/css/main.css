@@ -3,6 +3,20 @@ a:hover {
     transition: all 0.3s linear;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #D9D9D9;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #493fc8;
+}
+
+.wrapper {
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
 .wrapper {
     display: flex;
 }
@@ -92,6 +106,45 @@ section+section {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.scroll__top {
+    background-color: #493fc8;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+
+.scroll__top:hover {
+    cursor: pointer;
+    background-color: #3a339e;
+    transition: all 0.3s linear;
+}
+
+.scroll__top .icon.icon-arrow-upward {
+    fill: #fff;
+    width: 35px;
+    height: 35px;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.wrapper {
+    animation: fade-in 1s ease;
 }
 
 
