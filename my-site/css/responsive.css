@@ -38,6 +38,9 @@
     .left__bar {
         height: 60px;
     }
+    .quick__menu {
+        display: block;
+    }
     .quick__menu>ul {
         display: flex;
         justify-content: space-between;

@@ -147,6 +147,7 @@ section+section {
     animation: fade-in 1s ease;
 }
 
+.quick__menu,
 .button__menu {
     display: none;
 }
