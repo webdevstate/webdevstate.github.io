@@ -20,26 +20,6 @@ a:hover {
     width: 150px;
 }
 
-.image__wrapper {
-    background: #fff;
-    /*height: 200px;*/
-    position: relative;
-}
-
-.image__wrapper img {
-    width: 100%;
-}
-
-
-/*.image__wrapper h3 {
-    background-color: #f6f6f6;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-}*/
-
 .menu__items {
     display: flex;
     flex-direction: column;
