@@ -1,3 +1,8 @@
+a:hover {
+    color: #493fc8;
+    transition: all 0.3s linear;
+}
+
 .wrapper {
     display: flex;
 }
@@ -16,8 +21,8 @@
 }
 
 .image__wrapper {
-    background: #4b4b4b;
-    height: 200px;
+    background: #fff;
+    /*height: 200px;*/
     position: relative;
 }
 
@@ -25,14 +30,15 @@
     width: 100%;
 }
 
-.image__wrapper h3 {
+
+/*.image__wrapper h3 {
     background-color: #f6f6f6;
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
     margin: 0;
-}
+}*/
 
 .menu__items {
     display: flex;
@@ -42,7 +48,7 @@
 .menu__item {
     border-bottom: 1px solid #493fc8;
     text-align: center;
-    height: 75px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,6 +58,18 @@
     color: #b5b0f7;
     text-transform: uppercase;
     text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+
+.menu__item a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s linear;
 }
 
 section+section {
@@ -182,6 +200,12 @@ section+section {
     text-decoration: none;
 }
 
+.about__contact .value a:hover {
+    color: #493fc8;
+    text-decoration: underline;
+    transition: all 0.3s linear;
+}
+
 .about__text {
     margin: 35px 0;
 }
@@ -193,13 +217,28 @@ section+section {
 
 .about__content-description .btn {
     margin-right: 15px;
+    transition: all 0.3s linear;
+}
+
+.about__content-description .btn:hover {
+    border-color: #493fc8;
+    background-color: #493fc8;
+    color: #ffffff;
+    transition: all 0.3s linear;
 }
 
 
 /**********************Skills***********************/
 
 .skills {
-    background-color: #5a5a5a;
+    background-color: #f7f7f7;
+}
+
+
+/********************Contact**************************/
+
+.contact {
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.23);
 }
 
 
