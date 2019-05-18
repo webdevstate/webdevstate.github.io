@@ -12,6 +12,13 @@
         height: 100%;
         width: 100%;
     }
+    .tariff__items{
+        justify-content: center;
+    }
+    .tariff__item{
+        width: 44%;
+        margin: 10px;
+    }
 }
 @media(max-width: 569px){
    

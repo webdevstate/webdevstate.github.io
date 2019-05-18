@@ -276,19 +276,19 @@ h2:after {
 }
 .tariff__items {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.tarif__item {
+.tariff__item {
     width: 30%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding: 20px 10px;
 }
-.tarif__item ul li{
+.tariff__item ul li{
     font-weight: 600;
     font-size: 16px;
 }
 
-.tarif__item .price {
+.tariff__item .price {
     font-size: 36px;
     font-weight: 600;
     display: block;
