@@ -150,7 +150,7 @@ h2:after {
 }
 .about__wrapper{
     display: flex;
-    background: url(/img/gym-trainer.png);
+    background: url(../img/gym-trainer.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center right;
