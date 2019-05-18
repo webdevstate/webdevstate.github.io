@@ -1,6 +1,9 @@
 body{
     color: #000000;
 }
+section{
+    padding: 50px 0;
+}
 .container{
     max-width: 1140px;
     width: 100%;
@@ -53,11 +56,10 @@ body{
     background-color: #fff;
 }
 .top__banner{
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(https://mk0athemesdemon3j7s5.kinstacdn.com/wp-content/uploads/sites/33/2014/12/aircraft-547105_1920.jpg) ;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../img/bg_main.jpg) no-repeat center center ;
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
     top: 0;
     width: 100%;
     padding-top: 65px;
@@ -96,12 +98,13 @@ body{
 .btn__action:hover{
     cursor: pointer;
 }
-.feature{
-    padding: 50px;
-}
+
 
 h2{
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
 }
 h2:after {
     content: '';
@@ -109,30 +112,68 @@ h2:after {
     display: block;
     width: 100px;
     height: 6px;
-    background-color: #f2d25b;
+    background-color: #ffe219;
+}
+.tour{
+    background-color: #f7f7f7;
 }
 .feature__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 50px;
 }
 .feature__item {
     height: 300px;
-    width: 300px;
+    width: 31%;
     margin-bottom: 27px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('https://protrip.ru/wp-content/uploads/2019/03/snimok-ekrana-2019-01-16-v-13.50.08-1.png');
+    text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     transition: all 0.5s linear;
     border: 3px solid #fff;
 }
+.feature__item:nth-child(1){
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/feature/1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.feature__item:nth-child(2){
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/feature/2.jpg) no-repeat center center;
+    background-size: cover;
+}
+.feature__item:nth-child(3){
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/feature/3.jpg) no-repeat center center;
+    background-size: cover;
+}
+.feature__item:nth-child(4){
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/feature/1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.feature__item:nth-child(5){
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/feature/2.jpg) no-repeat center center;
+    background-size: cover;
+}
+.feature__item:nth-child(6){
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/feature/3.jpg) no-repeat center center;
+    background-size: cover;
+}
+.feature__item:nth-child(7){
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/feature/1.jpg) no-repeat center center;
+    background-size: cover;
+}
+.feature__item:nth-child(8){
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/feature/2.jpg) no-repeat center center;
+    background-size: cover;
+}
+.feature__item:nth-child(9){
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../img/feature/3.jpg) no-repeat center center;
+    background-size: cover;
+}
 .feature__item:hover{
     cursor: pointer;
-    background: rgba(242, 210, 91, 1);
+    background: #ffe219;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: all 0.5s linear;
 }
@@ -148,8 +189,7 @@ h2:after {
 }
 
 .about {
-    padding: 50px;
-    background:rgb(204, 204, 204);
+     background:#f7f7f7;
 }
 .about__wrapper{
     display: flex;
@@ -157,19 +197,22 @@ h2:after {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center right;
-    height: 450px;
+
 }
 
 .about__text {
-    padding: 15px;
     width: 60%;
+}
+.about__text p{
+    padding: 0;
+    margin: 0;
 }
 
 .section__form {
-    background-color: #f2d25b;
+    background-color: #ffe219;
     display: flex;
     justify-content: center;
-    padding: 40px 0;
+    padding: 80px 0;
 }
 .form__static {
     display: flex;
@@ -206,14 +249,41 @@ h2:after {
 
 .gallery__items {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .gallery__item {
-    width: 30%;
+    width: 31%;
     height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 3px solid #fff;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
 }
 .gallery__img {
-    height: 100%;
+    height: auto;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
 }
+
+
+.time-table{
+    background-color: #f7f7f7;
+}
+
+.footer{
+    background-color: #3c3c3c;
+    height: 100px;
+}
+
+
+
+
+
+
+
 
