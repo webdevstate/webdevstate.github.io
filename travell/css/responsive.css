@@ -16,8 +16,12 @@
         justify-content: center;
     }
     .tariff__item{
-        width: 44%;
+        width: 42%;
         margin: 10px;
+    }
+    .btn__action.btn__tariff{
+        width: 100%;
+        font-size: 18px;
     }
 }
 @media(max-width: 569px){
@@ -60,6 +64,10 @@
     }
     .tabs a{
         padding: 10px 20px;
+    }
+    .tariff__item{
+        width: 100%;
+        margin: 10px;
     }
 }
 @media(max-width: 425px){
