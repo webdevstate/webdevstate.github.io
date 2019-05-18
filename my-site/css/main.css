@@ -164,7 +164,6 @@ section+section {
     height: 100vh;
     background: url(../images/main_bg.jpg) no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .main h1 {
@@ -273,6 +272,40 @@ section+section {
 .skills {
     background-color: #f7f7f7;
 }
+.progress__items {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 30px auto 0;
+}
+.progress__item {
+    margin-bottom: 20px;
+  }
+  .progress__item:nth-child(5),
+  .progress__item:nth-child(6){
+      margin-bottom: 0;
+  }
+.progress__count {
+    margin: 20px;
+    width: 400px;
+    height: 3px;
+    position: relative;
+  }
+  .progress__count span{
+    position: absolute;
+    top: -20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #35373e;
+  }
+  .progress__count svg::after{
+      content: '';
+      background: url(/images/treangle.png);
+      padding: 20px;
+  }
 
 
 /********************Contact**************************/

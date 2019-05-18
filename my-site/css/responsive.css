@@ -15,7 +15,6 @@
         height: 100vh;
         background: url(../images/main_bg.jpg) no-repeat center bottom;
         background-size: cover;
-        background-attachment: fixed;
     }
     .menu__items {
         display: flex;
@@ -161,6 +160,17 @@
         width: 90%;
         margin-right: 0;
     }
+    .progress__items,
+    .progress__item,
+    .progress__count {
+        width: 100%;
+    }
+    .progress__item:nth-child(5){
+        margin-bottom: 20px;
+    }
+    
+
+
     .footer {
         margin-bottom: 60px;
         position: relative;
