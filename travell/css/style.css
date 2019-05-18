@@ -274,6 +274,34 @@ h2:after {
 .time-table{
     background-color: #f7f7f7;
 }
+.tariff__items {
+    display: flex;
+    justify-content: space-between;
+}
+.tarif__item {
+    width: 30%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 20px 10px;
+}
+.tarif__item ul li{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.tarif__item .price {
+    font-size: 36px;
+    font-weight: 600;
+    display: block;
+}
+.footnote{
+    color: #888888;
+    font-size: 12px;
+}
+.btn__action.btn__tariff {
+    color: #000;
+    margin: 0 auto;
+    background: #ffe219;
+}
 
 .footer{
     background-color: #3c3c3c;
