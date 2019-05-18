@@ -244,5 +244,3 @@
 	window.grid3D = grid3D;
 
 })( window );
-
-new grid3D( document.getElementById( 'grid3d' ) );
