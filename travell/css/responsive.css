@@ -12,16 +12,19 @@
         height: 100%;
         width: 100%;
     }
-    .tariff__items{
+    .card__items{
         justify-content: center;
     }
-    .tariff__item{
+    .card__item{
         width: 42%;
         margin: 10px;
     }
     .btn__action.btn__tariff{
         width: 100%;
         font-size: 18px;
+    }
+    .excursions .tabs_item img{
+        width: 100%;
     }
 }
 @media(max-width: 569px){
@@ -65,7 +68,7 @@
     .tabs a{
         padding: 10px 20px;
     }
-    .tariff__item{
+    .card__item{
         width: 100%;
         margin: 10px;
     }

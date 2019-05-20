@@ -274,33 +274,124 @@ h2:after {
 .time-table{
     background-color: #f7f7f7;
 }
-.tariff__items {
+.card__items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-.tariff__item {
+.card__item {
     width: 30%;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding: 20px 10px;
 }
-.tariff__item ul li{
+.card__item ul li{
     font-weight: 600;
     font-size: 16px;
 }
 
-.tariff__item .price {
+.card__item .price {
     font-size: 36px;
     font-weight: 600;
     display: block;
+}
+.card__img-wrapper {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+}
+.card__item-img{
+    width: 100%;
+}
+.card__item-text{
+    color: #888888;
 }
 .footnote{
     color: #888888;
     font-size: 12px;
 }
+.card__social {
+    display: flex;
+    justify-content: center;
+}
+.card__social .fa {
+    font-size: 20px;
+    color: #4A76A8;
+    border: 1px solid;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
 .btn__action.btn__tariff {
     color: #000;
     margin: 0 auto;
     background: #ffe219;
+}
+.testimonials__item {
+
+}
+.item__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.testimonials__text {
+    text-align: center;
+}
+
+.testimonials__img-wrapper {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.testimonials__img {
+    width: 100%;
+    height: auto;
+}
+.excursions .tabs_item img {
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.hotel__description{
+    color: #888888;
+}
+
+.biliard:before{
+    content: '';
+    background: url(../img/icon/biliard.svg) no-repeat center center; 
+    padding: 10px;
+    margin-right: 5px;
+}
+.wifi:before{
+    content: '';
+    background: url(../img/icon/wi-fi.svg) no-repeat center center; 
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.video__item-wrapper {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .footer{
