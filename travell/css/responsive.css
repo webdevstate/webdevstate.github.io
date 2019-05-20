@@ -28,7 +28,9 @@
     }
 }
 @media(max-width: 569px){
-   
+    .logo{
+        margin-left: 10px;
+    }
     .top__contact{
         display: none;
     }
