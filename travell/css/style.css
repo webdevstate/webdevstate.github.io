@@ -28,6 +28,13 @@ section{
     margin-left: 50px;
     position: absolute;
     left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo__img{
+    height: 75%;
+    margin-right: 15px;
 }
 .top__line a{
     color: #ffffff;
