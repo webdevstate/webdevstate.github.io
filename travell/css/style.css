@@ -468,3 +468,12 @@ h2:after {
 .menu-main {
     width: 50%;
 }
+
+section.tour,
+section.time-table,
+section.card,
+section.location,
+section.excursions,
+section.tariff {
+    background-color: #f6f6f6;
+}
