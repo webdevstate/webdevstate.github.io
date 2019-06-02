@@ -136,10 +136,6 @@ h2:after {
     background-color: #ffe219;
 }
 
-.tour {
-    background-color: #f7f7f7;
-}
-
 .feature__items {
     display: flex;
     justify-content: space-between;
@@ -310,10 +306,6 @@ h2:after {
     height: auto;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-}
-
-.time-table {
-    background-color: #f7f7f7;
 }
 
 .card__items {
