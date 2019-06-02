@@ -172,32 +172,32 @@ h2:after {
 }
 
 .feature__item:nth-child(4) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/feature/1.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/feature/4.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .feature__item:nth-child(5) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/feature/2.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/feature/5.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .feature__item:nth-child(6) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/feature/3.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/feature/6.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .feature__item:nth-child(7) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/feature/1.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/feature/7.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .feature__item:nth-child(8) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/feature/2.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/feature/8.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .feature__item:nth-child(9) {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/feature/3.jpg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/feature/9.jpg) no-repeat center center;
     background-size: cover;
 }
 
