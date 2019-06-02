@@ -383,6 +383,10 @@ h2:after {
     background: #ffe219;
 }
 
+.tariff__item {
+    width: 50%;
+}
+
 .testimonials__item {}
 
 .item__wrapper {
