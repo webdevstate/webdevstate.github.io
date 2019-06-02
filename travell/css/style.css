@@ -292,7 +292,7 @@ h2:after {
 
 .gallery__item {
     width: 31%;
-    height: 200px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
