@@ -454,3 +454,13 @@ h2:after {
     background-color: #3c3c3c;
     height: 100px;
 }
+
+.menu-table__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-main {
+    width: 50%;
+}

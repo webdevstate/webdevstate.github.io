@@ -26,6 +26,9 @@
     .excursions .tabs_item img {
         width: 100%;
     }
+    .menu-main {
+        width: 100%;
+    }
 }
 
 @media(max-width: 569px) {
