@@ -20,7 +20,7 @@ $(document).ready(function() {
 });
 
 
-$('.testimonials__items.responsive.video-slide').slick({
+$('.testimonials__items.responsive.video-slider').slick({
     dots: true,
     infinite: true,
     speed: 300,
