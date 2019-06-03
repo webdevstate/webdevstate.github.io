@@ -387,7 +387,15 @@ h2:after {
     width: 47%;
 }
 
-.testimonials__item {}
+.testimonials__item .item__wrapper {
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    margin: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
 
 .item__wrapper {
     display: flex;
