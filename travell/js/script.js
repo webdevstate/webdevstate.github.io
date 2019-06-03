@@ -62,7 +62,7 @@ $('.testimonials__items.responsive.testimonial').slick({
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     loop: true,
     arrows: true,
 });
