@@ -20,7 +20,7 @@ $(document).ready(function() {
 });
 
 
-$('.responsive').slick({
+$('.testimonials__items.responsive.video-slide').slick({
     dots: true,
     infinite: true,
     speed: 300,
@@ -57,7 +57,7 @@ $('.responsive').slick({
         // instead of a settings object
     ]
 });
-$('.testimonials__items').slick({
+$('.testimonials__items.responsive.testimonial').slick({
     dots: true,
     infinite: true,
     speed: 300,
