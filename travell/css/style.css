@@ -452,14 +452,7 @@ h2:after {
     margin-right: 5px;
 }
 
-.testimonials__items.video-slider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.video__item {
-    width: 48%;
+.video__item-wrapper {
     height: 300px;
     display: flex;
     justify-content: center;
