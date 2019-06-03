@@ -245,7 +245,7 @@ h2:after {
     background-color: #ffe219;
     display: flex;
     justify-content: center;
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .form__static {
@@ -282,6 +282,11 @@ h2:after {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.form-text h3 {
+    font-size: 30px;
+    text-align: center;
 }
 
 .gallery__items {
