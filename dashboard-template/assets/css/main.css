@@ -239,3 +239,9 @@ body {
 .graph-item {
     background: url(../images/bg-graph.png) no-repeat center;
 }
+
+.graph-item__title {
+    border-bottom: 1px solid #3b354c;
+    font-size: 36px;
+    font-weight: 900;
+}
