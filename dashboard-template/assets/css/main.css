@@ -249,3 +249,7 @@ body {
 .bills-item {
     border-right: 1px solid #3b354c;
 }
+
+.bills-item:last-child {
+    border: none;
+}
