@@ -249,22 +249,29 @@ body {
     justify-content: center;
 }
 
+.biils-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .bills-item {
     border-right: 1px solid #3b354c;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 33.33%;
 }
 
+
+}
 .bills-item:last-child {
     border: none;
 }
-
 .bills-item__title {
     font-size: 24px;
 }
-
 .bills-item__value {
     font-size: 36px;
 }
