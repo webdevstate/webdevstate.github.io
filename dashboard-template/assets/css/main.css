@@ -245,3 +245,7 @@ body {
     font-size: 36px;
     font-weight: 600;
 }
+
+.bills-item {
+    border-right: 1px solid #3b354c;
+}
