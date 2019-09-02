@@ -1,0 +1,79 @@
+@media (min-width: 540px) {
+    #site-wrapper {
+        padding-left: 0;
+        height: 100%;
+    }
+    #site-wrapper nav {
+        background-color: palegreen;
+        width: 0;
+    }
+    #site-wrapper main {
+        padding: 20px;
+        position: relative;
+        height: 100%;
+    }
+    #site-wrapper.visible {
+        padding-left: 40%;
+    }
+    #site-wrapper.visible nav {
+        width: 40%;
+    }
+    #site-wrapper.visible main {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 960px) {
+    #site-wrapper {
+        padding-left: 0;
+        height: 100%;
+    }
+    #site-wrapper nav {
+        background-color: peru;
+        width: 0;
+    }
+    #site-wrapper main {
+        padding: 20px;
+        position: relative;
+        height: 100%;
+    }
+    #site-wrapper.visible {
+        padding-left: 30%;
+    }
+    #site-wrapper.visible nav {
+        width: 30%;
+    }
+    #site-wrapper.visible main {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1140px) {
+    #site-wrapper {
+        padding-left: 80px;
+        height: 100%;
+    }
+    #site-wrapper nav {
+        background-color: steelblue;
+        width: 80px;
+    }
+    #site-wrapper main {
+        padding: 20px;
+        position: relative;
+        height: 100%;
+        padding: 20px 40px;
+    }
+    #site-wrapper.visible {
+        padding-left: 300px;
+    }
+    #site-wrapper.visible nav {
+        width: 300px;
+    }
+    #site-wrapper.visible main {
+        position: relative;
+        margin-right: 0;
+        padding: 20px 40px;
+    }
+}
