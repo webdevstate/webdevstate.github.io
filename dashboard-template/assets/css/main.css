@@ -237,5 +237,5 @@ body {
 }
 
 .graph-item {
-    background: url(../images/bg-graph.png);
+    background: url(../images/bg-graph.png) no-repeat center;
 }
