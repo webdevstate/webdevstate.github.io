@@ -4,7 +4,6 @@
         height: 100%;
     }
     #site-wrapper nav {
-        background-color: palegreen;
         width: 0;
     }
     #site-wrapper main {
@@ -30,7 +29,6 @@
         height: 100%;
     }
     #site-wrapper nav {
-        background-color: peru;
         width: 0;
     }
     #site-wrapper main {
@@ -56,7 +54,6 @@
         height: 100%;
     }
     #site-wrapper nav {
-        background-color: steelblue;
         width: 80px;
     }
     #site-wrapper main {
